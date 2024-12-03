@@ -1,0 +1,228 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #5d4037; /* Color marrón oscuro */
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #3e2723; /* Color marrón oscuro */
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabecera */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.1);
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 1.2rem;
+    color: #d7ccc8; /* Gris claro para contraste */
+    margin-bottom: 20px;
+}
+
+/* Sección Sobre mí */
+.about-me {
+    margin-bottom: 40px;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    color: #ffb74d; /* Tono cálido */
+    margin-bottom: 15px;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    color: #d7ccc8;
+}
+
+/* Sección Intereses */
+.interests {
+    margin-bottom: 40px;
+}
+
+.interests h2 {
+    font-size: 2rem;
+    color: #ffb74d; /* Tono cálido */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.interest-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.interest-item {
+    background-color: #5d4037;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.interest-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.interest-item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.interest-item p {
+    font-size: 1rem;
+    color: #d7ccc8;
+}
+
+.interest-item:hover {
+    transform: translateY(-10px);
+    background-color: #3e2723;
+}
+
+/* Sección Pasatiempos */
+.hobbies {
+    margin-bottom: 40px;
+}
+
+.hobbies h2 {
+    font-size: 2rem;
+    color: #ffb74d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hobby-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hobby-item {
+    background-color: #5d4037;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hobby-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.hobby-item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hobby-item p {
+    font-size: 1rem;
+    color: #d7ccc8;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+    background-color: #3e2723;
+}
+
+/* Galería */
+.gallery {
+    margin-bottom: 30px;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffb74d;
+}
